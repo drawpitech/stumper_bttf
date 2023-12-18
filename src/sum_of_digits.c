@@ -30,6 +30,8 @@ int sum_of_digits(const char *str)
 
     if (str == NULL)
         return my_puterr(ERR_NO_INPUT);
+    if (my_strlen(str) == 0)
+        return my_puterr(ERR_EMPTY);
     sum = my_sum_digits(str);
     if (sum == SENTINEL)
         return my_puterr(ERR_INVALID);

@@ -9,7 +9,9 @@
 
 int main(int argc, char **argv)
 {
-    if (argc != 2 || argv[1] == NULL)
+    if (argc < 2 || argv[1] == NULL)
         return my_puterr(ERR_NO_INPUT);
+    if (argc > 2)
+        return my_puterr(ERR_TOO_MUCH_INPUT);
     return sum_of_digits(argv[1]);
 }
