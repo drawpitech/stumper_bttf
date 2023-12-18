@@ -2,7 +2,7 @@
 *.out
 unit_tests
 asan
-lem_in
+sum_of_digits
 prof
 seg
 

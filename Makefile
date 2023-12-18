@@ -1,6 +1,6 @@
 ##
 ## EPITECH PROJECT, 2023
-## Stumper BTTF
+## Sum of digits
 ## File description:
 ## Makefile
 ##
@@ -16,7 +16,7 @@ CFLAGS += -U_FORTIFY_SOURCE
 CFLAGS += -iquote ./src
 
 # ↓ Binaries
-NAME := lem_in
+NAME := sum_of_digits
 TEST_NAME := unit_tests
 ASAN_NAME := asan
 PROF_NAME := prof
