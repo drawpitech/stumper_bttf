@@ -24,3 +24,11 @@ Test(sum_of_digits, ex1, .init=redirect_all)
     cr_assert_eq(res, 0);
     cr_assert_stdout_eq_str("The sum of all digits in the given integer is 6.\n");
 }
+
+Test(sum_of_digits, ex2, .init=cr_redirect_stderr)
+{
+    int res = sum_of_digits("123a4");
+
+    cr_assert_eq(res, 84);
+    cr_assert_stderr_eq_str("Error: Invalid input. Only positive integers are allowed.\n");
+}

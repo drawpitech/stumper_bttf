@@ -25,9 +25,6 @@ int my_putstr(const char *str)
 
 int my_puterr(const char *str)
 {
-    static const char name[] = "Error: ";
-
-    write(STDERR_FILENO, name, sizeof(name));
     write(STDERR_FILENO, str, my_strlen(str));
     return RET_ERROR;
 }

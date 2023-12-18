@@ -12,8 +12,9 @@
 
     #define IS_DIGIT(c) (c >= '0' && c <= '9')
 
-    #define ERR_INVALID "Invalid input. Only positive integers are allowed.\n"
-    #define ERR_NO_INPUT "Invalid input. No input provided.\n"
+    #define ERR_NAME "Error: "
+    #define ERR_INVALID ERR_NAME "Invalid input. Only positive integers are allowed.\n"
+    #define ERR_NO_INPUT ERR_NAME "Invalid input. No input provided.\n"
     #define SENTINEL (size_t)-1
 
 enum {
