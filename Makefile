@@ -23,11 +23,13 @@ PROF_NAME := prof
 
 # Source files
 VPATH := src
-SRC :=
+SRC := sum_of_digits.c
+SRC += utils.c
 
 # Tests files
 VPATH += tests
 TEST_SRC := $(SRC)
+TEST_SRC += test_sum_of_digits.c
 
 SRC += main.c
 

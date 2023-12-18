@@ -12,12 +12,19 @@
 
     #define IS_DIGIT(c) (c >= '0' && c <= '9')
 
-    #define ERR_MSG "Invalid input. Only positive integers are allowed.\n"
+    #define ERR_INVALID "Invalid input. Only positive integers are allowed.\n"
+    #define ERR_NO_INPUT "Invalid input. No input provided.\n"
     #define SENTINEL (size_t)-1
 
 enum {
     RET_ERROR = 84,
     RET_VALID = 0,
 };
+
+size_t my_strlen(const char *str);
+int my_putstr(const char *str);
+int my_puterr(const char *str);
+void my_putnbr(size_t nbr);
+int sum_of_digits(const char *str);
 
 #endif /* SUM_OF_DIGITS_H_ */
