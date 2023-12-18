@@ -33,7 +33,7 @@ int sum_of_digits(const char *str)
     sum = my_sum_digits(str);
     if (sum == SENTINEL)
         return my_puterr(ERR_INVALID);
-    my_putstr("The sum of all the digits in the given integer is ");
+    my_putstr("The sum of all digits in the given integer is ");
     my_putnbr(sum);
     my_putstr(".\n");
     return RET_VALID;
